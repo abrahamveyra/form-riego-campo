@@ -1,0 +1,138 @@
+.card{
+    margin-top: 50px;
+}
+
+p{
+    text-align: justify;
+}
+
+form{
+width: 50px;
+}
+
+body{
+    background-color: orangered !important;
+}
+
+#task-container{
+    width: 80%;
+}
+
+
+#filter{
+   margin-top: 50px;
+}
+
+#tab-info{
+    text-align: left;
+}
+.navbar-brand{
+    margin-left: 25px;
+}
+
+.modal-body{
+    background-image: url('cerezocasa.webp');
+}
+
+#logue-ado{
+    display: none;
+}
+
+.center-box{
+    position: absolute;
+    top: 25%;
+    left: 41%;
+    transform: translate(-50%,);
+    border: 2px solid white;
+    border-radius: 20px;
+    width: 300px;
+    height: 520px;
+    text-align: center;
+    background-image: url('../cerezocasa.webp');
+    background-repeat: no-repeat;
+    background-size: 63rem;
+}
+
+.text-field{
+    padding: 10px 30px;
+    margin: 20px 0;
+    border-radius: 10px;
+    border: 1px solid orangered;
+    font-size: 12ft;
+    color: green;
+}
+
+.btn-style{
+    padding: 10px 20px;
+    border-radius: 20px;
+    background-color: green;
+    color: white;
+}
+
+.btn-style:hover{
+    background-color: rgb(66, 131, 75);
+    }
+
+    #register-div{
+        display: none;
+    }
+
+    .an-btn{
+        margin-top: 10px;
+        border: 0;
+        background-color: none;
+        color: green;
+        font-size: 14ft;
+    }
+
+    .img-form{
+        max-width: 5rem;
+    }
+
+    #myInput {
+        background-image: url('/searchicon.jpg');
+        background-position: 10px 10px;
+        background-repeat: no-repeat;
+        width: 60%;
+        font-size: 16px;
+        padding: 12px 20px 12px 40px;
+        border: 1px solid #ddd;
+        margin-bottom: 12px;
+      }
+      
+      #myTable {
+        border-collapse: collapse;
+        width: 100%;
+        border: 1px solid #ddd;
+        font-size: 18px;
+      }
+      
+      #myTable th, #myTable td {
+        text-align: left;
+        padding: 12px;
+      }
+      
+      #myTable tr {
+        border-bottom: 1px solid #ddd;
+      }
+      
+      #myTable tr.header, #myTable tr:hover {
+        background-color: #f1f1f1;
+      }
+
+      .add-search{
+        text-align: center;
+      }
+
+      .img-storage{
+        height: 150px;
+        width: 150px;
+        border: 2px black solid;
+        border-radius: 80px;
+      }
+
+      #modal-control{
+        border: none;
+      }
+
+      
