@@ -1,64 +1,44 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <!-- Required meta tags -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-        
-   <script src="https://code.jquery.com/jquery-3.0.0.js"crossorigin="anonymous"></script>
-   <!-- jQuery and JS bundle w/ Popper.js -->
-   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
-   <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <link rel="stylesheet" href="estilos/formularios.css">
-
-    <link rel="icon" href="imagenes/ElCerezoOriginal.webp">
-   
-
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+     <!-- Required meta tags -->
+     <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+     <link rel="stylesheet" href="estilos/formularios.css">
+ 
+     <link rel="icon" href="imagenes/ElCerezoOriginal.webp">
+     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+ 
+     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+     
     
-   
-
-    <!-- Bootstrap CSS -->
-  
-    <title>Formularios</title>
-    <style>
-      table {
-        border-collapse: collapse;
-        border-spacing: 0;
-        width: 100%;
-        border: 1px solid #ddd;
-      }
-      
-      th, td {
-        text-align: left;
-        padding: 8px;
-      }
-      
-      tr:nth-child(even){background-color: #f2f2f2}
-      </style>
+ 
+     <!-- Bootstrap CSS -->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+ 
   </head>
+ 
   <body>
 
-    <center>
 <div class="title-btn">
     <img class="img-btn" src="img/ElCerezoOriginal.webp" alt="">
     
 			<h6>Formularios de campo.<span>&#160;</span></h6>
 
-</div>
-      
-   <div class="container-btn"> 
+</div><br><br>
           
           <!-- Button trigger modal suelo-->
           <button type="button" class="btn btn-success btn-block" data-toggle="modal" data-target="#Modal-suelo">
             Registrar Requisitos suelo
-          </button><br>
+          </button><br><br>
 
 <!-- Modal info suelo-->
          
-<div style="overflow-x:auto;">
-          <table class="table table-suelo">
+<div class=" table-responsive">
+          <table class="table">
               <thead>
                   <tr>
+                    <th scope="col">Clave</th>
                       <th scope="col">Fecha</th>
                       <th scope="col">Cultivo revisado</th>
                       <th scope="col">Rancho revisado</th>
@@ -66,7 +46,7 @@
                       <th scope="col">Tiene producto</th>
                       <th scope="col">Humedad</th>
                       <th scope="col">Presion riego valvula</th>
-                   <!-- <th scope="col">Presion riego cintilla/manguera</th>
+                    <th scope="col">Presion riego cintilla/manguera</th>
                       <th scope="col">ph-gotero</th>
                       <th scope="col">ph-bomba</th>
                       <th scope="col">ph-tierra</th>
@@ -74,7 +54,7 @@
                       <th scope="col">ce-bomba</th>
                       <th scope="col">ce-tierra</th>
                       <th scope="col">evapotranspiración</th>
-                      <th scope="col">comentario general</th>-->
+                      <th scope="col">comentario general</th>
                   </tr>
               </thead>
               <tbody id="tbodysuelo">
@@ -82,7 +62,8 @@
             
                 </tr>
               </tbody>
-          </table></div><br><br>
+          </table>
+        </div><br><br>
    
 
 <!--información suelo fin-->
@@ -90,11 +71,11 @@
 <button type="button" id="btn-nomina" class="btn btn-success btn-block" data-toggle="modal" data-target="#Modal-detalle-ciclos">
   Registrar detalle de ciclos
 </button><br><br>
- <div style="overflow-x:auto;"></div>
+ <div style="overflow-x:auto;">
 <table class="table table-striped">
   <thead>
       <tr>
-          <th scope="col">Fecha</th>
+        <!-- <th scope="col">Fecha</th>
           <th scope="col">Cultivo revisado</th>
           <th scope="col">Rancho revisado</th>
           <th scope="col">#_ciclo"</th>
@@ -111,7 +92,7 @@
           <th scope="col">mililitros_dren</th>
           <th scope="col">porcentaje_humedad</th>
           <th scope="col">evapotranspiración</th>
-          <th scope="col">comentario general</th>
+          <th scope="col">comentario general</th>-->
       </tr>
   </thead>
   <tbody id="tbodyciclo">
@@ -131,7 +112,7 @@
 <div style="overflow-x:auto;"></div>
 <table class="table table-striped">
   <thead>
-      <tr>
+    <!--  <tr>
           <th scope="col">Fecha</th>
           <th scope="col">Cultivo revisado</th>
           <th scope="col">Rancho revisado</th>
@@ -148,19 +129,19 @@
           <th scope="col">variedad</th>
           <th scope="col">comentario_general</th>
           <th scope="col">ce-tierra</th>
-      </tr>
+      </tr> -->
   </thead>
   <tbody id="tbodyestaciones">
     <tr>
 
     </tr>
   </tbody>
-</table></div><br><br>
+</table><br><br>
 
 
   
   </div>
-  </center>
+
     <div class="container p-4">
 
   <!-- modal ciclo de riego inicio -->
@@ -438,7 +419,7 @@
               <path d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z"/>
               <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
             </svg></span>
-            <input type="date" name="datetime-local" id="txtfecha" rows="3" placeholder="" required autocomplete="off">
+            <input type="datetime-local" name="datetime" id="txtfecha" rows="3" placeholder="" required autocomplete="off">
           </div>
         </div>
 
@@ -847,6 +828,9 @@
     <!-- Optional JavaScript; choose one of the two! -->
     
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+
     
     <!-- Option 2: Separate Popper and Bootstrap JS -->
     <!--

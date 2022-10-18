@@ -21,9 +21,7 @@ thead{
     height: 50px;
 }
 
-.container-btn{
-    margin-top: 10%;
-}
+
 
 .img-btn{
     width: 2.5rem;
@@ -88,17 +86,6 @@ option {
   box-sizing: border-box;
 }
 
-body {
-  display: grid;
-  place-items: center;
-  margin: 0;
-  height: 100vh;
-  padding: var(--space-m);
-  font-size: var(--font-size);
-  font-family: var(--font-family);
-  line-height: 1.2;
-  background-color: var(--color-tertiary);
-}
 
 a {
   color: var(--color-primary);
