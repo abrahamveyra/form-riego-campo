@@ -10,11 +10,11 @@ function obtenerestacion(){
 fetch('https://api.gec.org.mx/api/riegos/getFormEstaciones')
 .then(resp => resp.json())
 .then(resp => {
-    resp[0].forEach(element => {
+    resp.forEach(element => {
      
         //console.log(i, resp[i].humedad)
         $("#tbodyestaciones").append('<tr><td style="background-color: green; text-align: center; color:white">'+
-        element.pk_wap_rhidro_pro_01+'</td><td style="background-color: green; text-align: center; color:white">'+
+        element.id_rhidro+'</td><td style="background-color: green; text-align: center; color:white">'+
         element.fecha+'</td><td style="background-color: green; text-align: center; color:white">'+
         element.cultivo_revisado+'</td><td style="background-color: green; text-align: center; color:white">'+
         element.rancho_revisado+'</td><td style="background-color: green; text-align: center; color:white">'+

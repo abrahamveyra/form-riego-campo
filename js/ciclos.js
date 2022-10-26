@@ -9,11 +9,11 @@ let i=0;
 fetch('https://api.gec.org.mx/api/riegos/getFormCiclos')
 .then(resp => resp.json())
 .then(resp => {
-    resp[0].forEach(element => {
+    resp.forEach(element => {
      
         //console.log(i, resp[i].humedad)
         $("#tbodyciclo").append('<tr><td style="background-color: green; text-align: center; color:white">'+
-        element.pk_wap_rciclo_pro_01+'</td><td style="background-color: green; text-align: center; color:white">'+
+        element.rciclo+'</td><td style="background-color: green; text-align: center; color:white">'+
         element.fecha+'</td><td style="background-color: green; text-align: center; color:white">'+
         element.cultivo_revisado+'</td><td style="background-color: green; text-align: center; color:white">'+
         element.rancho_revisado+'</td><td style="background-color: green; text-align: center; color:white">'+

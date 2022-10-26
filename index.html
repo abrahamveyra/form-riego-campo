@@ -12,7 +12,10 @@
      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
  
 
-    
+    <link rel="manifest" href="manifest.json">
+
+    <!--Android-->
+    <meta name="theme-color" content="#71F908">
   </head>
  
   <body>
@@ -85,7 +88,7 @@
           <th scope="col">tiempo_ciclo(Minutos)</th>
           <th scope="col">#_base</th>
           <th scope="col">Tiene_producto</th>
-         <th scope="col">presion_riego_valvula</th>
+          <th scope="col">presion_riego_valvula</th>
           <th scope="col">presion_riego_cintilla_manguera</th>
           <th scope="col">ph_gotero</th>
           <th scope="col">ce_gotero</th>
@@ -113,7 +116,7 @@
 </button><br><br>
 
 
-<div class=" table-responsive table-striped">
+<div class="table-responsive table-striped">
 <table class="table table-striped">
   <thead>
      <tr>
@@ -173,7 +176,7 @@
               <path d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z"/>
               <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
             </svg></span>
-            <input type="datetime-local" name="date" id="txtfechaciclo" rows="3" placeholder="" required autocomplete="off">
+            <input type="date" name="date" id="txtfechaciclo" rows="3" placeholder="" required autocomplete="off">
           </div>
         </div>
 
@@ -185,14 +188,8 @@
             </svg></span>
             <select id="txtcultivociclo_revisado" class="cultivo" name="cultivo" required>
               <option  value="">SELECCIONA CULTIVO</option>
-              <option value="AGUACATE">AGUACATE</option>
               <option value="ARANDANO">ARANDANO</option>
-              <option value="ESPARRAGO">ESPARRAGO</option>
-              <option value="FRAMBUESA">FRAMBUESA</option>
               <option value="FRESA">FRESA</option>
-              <option value="MAIZ">MAIZ</option>
-              <option value="PAPA">PAPA</option>
-              <option value="ZARZAMORA">ZARZAMORA</option>
           </select>
           </div>
         </div>
@@ -418,7 +415,7 @@
               <path d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z"/>
               <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
             </svg></span>
-            <input type="datetime-local" name="datetime" id="txtfecha" rows="3" placeholder="" required autocomplete="off">
+            <input type="date" name="datetime" id="txtfecha" rows="3" placeholder="" required autocomplete="off">
           </div>
         </div>
 
@@ -649,7 +646,7 @@
               <path d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z"/>
               <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
             </svg></span>
-            <input type="datetime-local" name="date" id="txtfechaestacion" rows="3" placeholder="" required autocomplete="off">
+            <input type="date" name="date" id="txtfechaestacion" rows="3" placeholder="" required autocomplete="off">
           </div>
         </div>
 
@@ -661,14 +658,8 @@
             </svg></span>
             <select id="txtcultivoestacion_revisado" class="cultivo" name="cultivo" required>
               <option  value="">SELECCIONA CULTIVO</option>
-              <option value="AGUACATE">AGUACATE</option>
               <option value="ARANDANO">ARANDANO</option>
-              <option value="ESPARRAGO">ESPARRAGO</option>
-              <option value="FRAMBUESA">FRAMBUESA</option>
               <option value="FRESA">FRESA</option>
-              <option value="MAIZ">MAIZ</option>
-              <option value="PAPA">PAPA</option>
-              <option value="ZARZAMORA">ZARZAMORA</option>
           </select>
           </div>
         </div>

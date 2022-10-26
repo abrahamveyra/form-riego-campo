@@ -11,7 +11,7 @@ function obtener(){
 fetch('https://api.gec.org.mx/api/riegos/getFormSuelos')
 .then(resp => resp.json())
 .then(resp => {
-    resp[0].forEach(element => {
+    resp.forEach(element => {
      
         //console.log(i, resp[i].humedad)
         $("#tbodysuelo").append('<tr class="table-active"><td class="table-active" style="background-color: green; text-align: center; color:white">'+

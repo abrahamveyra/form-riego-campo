@@ -1,7 +1,7 @@
 
 //const CACHE_NAME = 'cache-1';
 
-const CACHE_STATIC_NAME = 'static-v1';
+const CACHE_STATIC_NAME = 'static-v2';
 const CACHE_DYNAMIC_NAME = 'dynamic-v1';
 const CACHE_INMUTABLE_NAME = 'inmutable-v2';
 
@@ -82,7 +82,7 @@ self.addEventListener( 'fetch', e =>{
 
     //4.- cache with network update
 
-    if(e.request.url.includes('bootstrap') || e.request.url.includes('jquery') || e.request.url.includes('sweetalert2@11')){
+    /*if(e.request.url.includes('bootstrap') || e.request.url.includes('jquery') || e.request.url.includes('sweetalert2@11')){
        return e.respondWith( caches.match(e.request))
     }
 
@@ -94,13 +94,13 @@ self.addEventListener( 'fetch', e =>{
      
     });
 
-    e.respondWith(respuesta);
+    e.respondWith(respuesta);*/
 
     //3- network with cache fallback
     
 
     //2.- cache with network fallback
-   /*const respuesta = caches.match( e.request)
+   const respuesta = caches.match( e.request)
     .then( res => {
         if(res) return res;
    
@@ -123,6 +123,6 @@ self.addEventListener( 'fetch', e =>{
     e.respondWith(respuesta);
 
     //1.-Cache only
-   // e.respondWith( caches.match( e.request ) )*/
+   // e.respondWith( caches.match( e.request ) )
 
 })
